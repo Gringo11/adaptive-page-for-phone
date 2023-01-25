@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			margin: 0;
+
+		}
+		
+		.wrapper{
+			max-width: 1440px;
+			font-family: 'Libre Franklin', sans-serif;
+			margin: auto;
+
+		}
+		.header{
+			background: url("Background.png");
+			width: 100%;
+			box-sizing: border-box;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+		}
+		.header-block{
+			padding: 95px 165px;
+			padding-bottom: 240px;
+		}
+		.upper-menu{
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+		}
+		.left-txt{
+			align-self: center;
+			font-size: 24px;
+		}
+		.hut{
+			display: flex;
+			list-style: none;
+			padding-left: 464px;
+			font-size: 18px;
+		}
+		.hut a{
+			text-decoration: none;
+			color: white;
+		}
+		.txt{
+			padding-left: 60px;
+			font-weight: 400;
+
+		}
+		.container{
+			
+			max-width: 1110px;
+			padding-top: 150px;
+		}
+		.upper-txt{
+			font-size: 64px;
+			line-height: 78px;
+		}
+		.middle-txt{
+			font-size: 24px;
+			line-height: 30px;
+			padding-top: 26px;
+		}
+		.lower-txt{
+			font-size: 18px;
+			line-height: 22px;
+			padding-top: 106px;
+		}
+		.lower-txt a{
+			color: white;
+		}
+		.header-about{	
+			padding: 96px 165px;	
+		}
+		.upper{
+			font-size: 24px;
+			font-weight: 700;
+			margin: 0;
+		}
+		.upper2{
+			font-size: 24px;
+			font-weight: 700;
+		}
+		.main-txt{
+			padding-top: 76px;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 400;
+			max-width: 1107px;
+			text-align: justify;
+		}
+		.skills-txt{
+			max-width: 100%;
+			padding: 96px 165px;
+			background-color: #FFFAF2;
+		}
+		.lower{
+			display: flex;
+			padding-top: 86px;
+		}
+		.pic{
+			margin-right: 34px;
+		}
+		.main-txt1{
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 400;
+			max-width: 1107px;
+			text-align: justify;
+		}
+		.portofolio-txt{
+			padding: 96px 165px;
+		}
+		.header-portofolio{
+			list-style: none;
+			margin-top: 93px;
+			padding-left: 0px;
+		}
+		.research {
+			font-weight: 600;
+		}
+		.research-block{
+			padding-bottom: 48px;
+		}
+		.shell-block{
+			display: flex;
+		}
+		.left-block{
+			padding-left: 125px;
+			padding-right: 30px;
+		}
+		.pic1{
+			padding-bottom: 26px;
+		}
+		.pic3{
+			padding-bottom: 26px;
+		}
+		.header-research{
+			list-style: none;
+			padding-inline-start: 0;
+		}
+		.main-txt2{
+			font-size: 18px;
+			text-align: justify;
+			line-height: 30px;
+			font-weight: 400;
+			margin: 0;
+		}
+		.pictures-block{
+			display: flex;
+			padding-top: 48px;
+		}
+		.basement{
+			font-size: 24px;
+			line-height: 30px;
+			justify-content: space-between;	
+
+			background: #FFFAF2;
+		}
+		.block-header{
+			padding-left: 165px;
+			padding-top: 93px;
+		}
+		.inside-basement{
+			display: flex;
+			justify-content: space-between;
+			padding-left: 165px;
+		}
+		.second-block{
+			padding-left: 308px;
+		}
+		.main-block{
+			display: flex;
+			max-width: 1100px;
+			justify-content: space-between;
+		}
+		.menu{
+			padding-inline-start: 0;
+
+		}
+		.menu a{
+			text-decoration: none;
+			color: black;
+
+		}
+		.menu-item{
+			list-style: none;
+			font-size: 18px;
+			font-weight: 400;
+
+		}
+		.menu-lower{
+			padding-inline-start: 0;
+		}
+		.menu-lower a{
+			text-decoration: none;
+			color: black;
+		}
+		@media only screen and (max-width: 375px) {
+			.right-txt{
+				display: none;
+			}
+			.upper-menu{
+				padding-top: 36px;
+			}
+			.header{
+				width: 100%;
+				height: 275px;
+				display: block;
+			}
+			.header-block{
+				padding: 0;
+			}
+			.container{
+				width: 217px;
+				height: 110px;
+				text-align: center;
+				padding: 0;
+				margin: auto;
+			}
+			.upper-txt{
+				font-size: 20px;
+				line-height: 24px;
+				padding-top: 50px;
+			}
+			.middle-txt{
+				font-size: 13px;
+				line-height: 15px;
+				margin-top: 13px;
+			}
+			.lower-txt{
+				font-size: 13px;
+				line-height: 15px;
+				padding-top: 41px;
+			}
+			.header-about{
+				padding: 0;
+			}
+			.upper{
+				font-weight: 600;
+				padding-top: 36px;
+			}
+			.main-txt{
+				font-size: 12px;
+				line-height: 14px;
+				width: 312px;
+				height: 212px;
+				padding-inline-start: 0;
+				margin: auto;
+				padding-top: 19px;
+			}
+			.about-txt{
+				padding: 0px;
+				height: 335px;
+				text-align: center;
+			}
+			.skills-txt{
+				height: 617px;
+				padding: 0;
+			}
+			.header-skills{
+				padding-top: 25px;
+				text-align: center;
+				line-height: 30px;
+				margin: 0;
+			}
+			.upper2{
+				padding-top: 0px;
+				margin: 0;
+			}
+			.pic{
+				width: 224px;
+				height: 218px;
+				margin: 0;
+			}
+			.lower{
+				padding-top: 25px;
+				display: block;
+				margin: 0;
+				text-align: center;
+			}
+			.main-txt1{
+				font-size: 12px;
+				line-height: 14px;
+				width: 312px;
+				margin: auto;
+				padding-top: 30px;
+			}
+			.portofolio-txt{
+				height: 404px;
+				display: block;
+				text-align: center;
+				padding: 0;
+			}
+			.pictures-block{
+				width: 308px;
+				height: 261px;
+				display: block;
+				padding: 0;
+				margin: auto;
+
+			}
+			.shell-block{
+				display: flex;
+				padding-top: 15px;
+			}
+			.research{
+				margin: 0;
+			}
+			.left-block{
+				padding: 0;
+			}
+			.pic1{
+				width: 170px;
+				height: 70px;
+				padding: 0;
+				padding-bottom: 12px;
+				padding-right: 12px;
+			}
+			.pic2{
+				width: 170px;
+				height: 113px ;
+				padding: 0;
+				padding-right: 14px;
+			}
+			.pic3{
+				width: 140px;
+				height: 117px ;
+				padding-bottom: 9px;
+			}
+			.pic4{
+				width: 140px;
+				height: 70px ;
+			}
+			.header-portofolio{
+				margin-top: 25px;
+			}
+			.research-block{
+				width: 308px;
+				height: 71px;
+				margin: auto;
+				padding-bottom: 19px;
+			}
+			.basement{
+				height: 360px;
+				display: block;
+				text-align: center;
+				margin-top: 0;
+
+			}
+			.block-header{
+				padding-top: 26px;
+				padding-left: 0;
+				margin: 0;
+
+			}
+			.block-header h4{
+				margin: 0;
+			}
+			.inside-basement{
+				margin: auto;
+				font-size: 14px;
+				justify-content: start;
+				padding-left: 0;
+			}
+			.research{
+				margin-top: 15px;
+			}
+			.main-txt2{
+				padding-top: 15px;
+				font-size: 12px;
+				line-height: 14px;
+				text-align: center;
+			}
+			.second-block{
+			padding-left: 99px;
+
+			}
+			.first-block{
+				margin-left: 42px;
+			}
+			.main-block{
+				display: block;
+				font-size: 14px;
+
+			}
+			.third-block{
+				font-size: 14px;
+				margin-top: 0;
+			}
+			.menu-lower{
+				margin-top: 0;
+				text-align: justify;
+				margin-left: 42px;
+			}
+			.menu-item{
+				font-size: 14px;
+				text-align: justify;
+			}
+
+
+		}
+
+			
+		
+	</style>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="header-block">
+		<div class="upper-menu">
+			<div class="left-txt">Portofolio</div>
+			<div class="right-txt">
+				<ul class="hut">
+					<li class="button-home"><a href="#">Home</a></li>
+					<li class="txt"><a href="#">About</a></li>
+					<li class="txt"><a href="#">Skills</a></li>
+					<li class="txt"><a href="#">Portfolio</a></li>
+					<li class="txt"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="upper-txt">Hi, It’s Théophile Seyrig</div>
+			<div class="middle-txt">Designer from Porto, Portugal</div>
+			<div class="lower-txt"><u><a href="#">Latest works</a></u></div>
+		</div>
+		</div>
+	</div>
+	<div class="about-txt">
+		<div class="header-about">
+			<h4 class="upper">About</h4>
+			<div class="main-txt"><p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
+			<p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p></div>
+		</div>
+	</div>
+	<div class="skills-txt">
+		<div class="header-skills">
+			<h4 class="upper2">Skills</h4>
+		</div>
+		<div class="lower">
+			<img src="Profile Picture.png" class="pic">
+			<div class="main-txt1">
+				<p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
+
+				Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.
+			</div>
+		</div>
+		
+	</div>
+	<div class="portofolio-txt">
+		
+		<div class="research-block">
+				<h4 class="upper">Portofolio</h4>
+			</div>
+		<h5 class="research">UX Research</h5>
+
+			<div class="pictures-block">
+				<p class="main-txt2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+				<div class="shell-block">
+				<div class="left-block">
+					<img src="Rectangle.png" class="pic1">
+					<img src="Rectangle-2.png" class="pic2">
+				</div>
+				<div class="right-block">
+					<img src="Rectangle-4.png" class="pic3">
+					<img src="Rectangle-3.png" class="pic4">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="basement">
+			<div class="block-header"><h4>Get in Touch</h4></div>
+			<div class="main-block">
+			<div class="inside-basement">
+			<div class="first-block">
+					<ul class="menu">
+					<li class="menu-item"><a href="#">Dribble</a></li>
+					<li class="menu-item"><a href="#">Behance</a></li>
+					<li class="menu-item"><a href="#">CodePen</a></li>
+					<li class="menu-item"><a href="#">GitHub</a></li>
+					<li class="menu-item"><a href="#">Medium</a></li>
+					</ul>
+			</div>
+			<div class="second-block">
+					<ul class="menu">
+					<li class="menu-item"><a href="#">Linkedin</a></li>
+					<li class="menu-item"><a href="#">Facebook</a></li>
+					<li class="menu-item"><a href="#">Instagram</a></li>
+					<li class="menu-item"><a href="#">Twitter</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="third-block">
+					<ul class="menu-lower">
+					<li class="menu-item"><a href="#">seyrig@mailme.com</a></li>
+					<li class="menu-item"><a href="#">+ 55 6645 665544</a></li>
+					</ul>
+		</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
